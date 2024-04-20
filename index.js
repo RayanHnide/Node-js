@@ -15,6 +15,9 @@ app.use(express.json())
 //api
 //Articles End Point
 //ADD Articles
+app.get('/',(req,res)=>{
+    res.send('Welcome to Node js Project ... please Change url to https://node-js-vjl6.onrender.com/showArticles')
+})
 app.post('/articles',async(req,res)=>{
     const articleTitle = req.body.title
 const artileBody = req.body.body
